@@ -208,7 +208,7 @@ And by clicking it, you can see all the tags (that is the git mechanism to mark 
 
 A quick (but perhaps a bit dirty) way to solve the problem was to checkout the repository once again just before the tagging step:
 
-```jos
+```js
     - uses: actions/checkout@v2 // highlight-line
     - name: Bump version and push tag
       uses: anothrNick/github-tag-action@1.33.0

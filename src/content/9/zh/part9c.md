@@ -61,7 +61,7 @@ TypeScript的原生<i>tsc</i> 编译器可以帮助我们使用命令<i>tsc -- i
 现在我们可以通过运行如下命令来初始化 tsconfig.json 设置:
 
 
-```sh
+```shell
  npm run tsc -- --init
 ```
 
@@ -142,7 +142,7 @@ TypeScript的原生<i>tsc</i> 编译器可以帮助我们使用命令<i>tsc -- i
 <!-- Now that we have our preferred configuration set, let's continue by installing <i>express</i> and of course also <i>@types/express</i>. Since this is a real project, which is intended to be grown over time, we will use eslint from the very  beginning: -->
 现在我们已经有了首选的配置集，让我们继续安装<i>express</i>，当然还有<i>@types/express</i>.。 由于这是一个真正的项目，并打算随着时间的推移而成长，我们将从一开始就使用 eslint:
 
-```sh
+```shell
 npm install express
 npm install --save-dev eslint @types/express @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
@@ -216,7 +216,7 @@ npm install --save-dev eslint @types/express @typescript-eslint/eslint-plugin @t
 <!-- So, let's install <i>ts-node-dev</i> -->
 因此，让我们安装<i>ts-node-dev</i>
 
-```sh
+```shell
 npm install --save-dev ts-node-dev
 ```
 
@@ -389,16 +389,7 @@ Fork和clone项目[patientor](https://github.com/fullstack-hy2020/patientor)。 
 <!-- - Weather conditions (good, windy, rainy or stormy) -->
 - 天气状况(良好、多风、多雨或暴风雨)
 <!-- - Visibility (good, ok or poor) -->
-- 能见度(良好、正常或欠佳)
-<!-- - Free text detailing the experience -->
-- 自由的文本记录的详细介绍经验
-
-
-
-<!-- We have obtained some sample data, which we will use as a base to build on. -->
-我们已经获得了一些样本数据，我们将以此为基础进行构建。
-<!-- The data is saved in json format, and can be found from [here](https://github.com/fullstack-hy2020/misc/blob/master/diaryentries.json). -->
-这些数据以 json 格式保存，可以在 [here](https://github.com/fullstack-hy2020/misc/blob/master/diaryentries.json).中找到
+- 能见度(良好、正常或欠```shell，可以在 [here](https://github.com/fullstack-hy2020/misc/blob/master/diaryentries.json).中找到
 
 <!-- The data looks like the following -->
 数据如下所示
@@ -779,14 +770,14 @@ node will try to resolve modules in order of extensions: -->
 
 根据node 文档中对 [file modules](https://nodejs.org/api/modules.html#modules_file_modules) 的描述，node 会按扩展项的顺序进行解析：
 
-```sh
+```shell
  ["js", "json", "node"]
 ```
 
 <!-- In addition to that, by default, <i>ts-node</i> and <i>ts-node-dev</i> extend the list of possible node module extensions to: -->
 另外，默认情况下<i>ts-node</i> 和 <i>ts-node-dev</i> 增加了可能的 node 模块扩展：
 
-```sh
+```shell
  ["js", "json", "node", "ts", "tsx"]
 ```
 
@@ -797,7 +788,7 @@ node will try to resolve modules in order of extensions: -->
 <!-- Consider a flat folder structure containing files: -->
 假设一个文件夹结构如下：
 
-```sh
+```shell
   ├── myModule.json
   └── myModule.ts
 ```
@@ -813,7 +804,7 @@ import myModule from "./myModule";
 <!-- Looking closely at the order of node module extensions: -->
 仔细看一下node 模块的扩展顺序
 
-```sh
+```shell
  ["js", "json", "node", "ts", "tsx"]
 ```
 
