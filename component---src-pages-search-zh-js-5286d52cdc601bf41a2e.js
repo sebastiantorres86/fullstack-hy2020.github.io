@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[34],{HmxX:function(e,a,n){"use strict";n.r(a),n.d(a,"pageQuery",(function(){return l}));var t=n("q1tI"),r=n.n(t),c=n("D9jW");a.default=function(e){var a=e.data;return r.a.createElement(c.a,{localSearch:a.localSearchChinese,title:"搜索课程",inputPlaceholder:"输入关键词",lang:"zh"})};var l="1128546489"}}]);
+//# sourceMappingURL=component---src-pages-search-zh-js-5286d52cdc601bf41a2e.js.map
